@@ -7,20 +7,17 @@ Source:
 https://github.com/Zibri/cloudflare-cors-anywhere
 
 Demo:
-https://test.cors.workers.dev
+https://bold-forest-51f4.hanpengchen.workers.dev
 
-Donate:
-https://paypal.me/Zibri/5
-
-Post:
-http://www.zibri.org/2019/07/your-own-cors-anywhere-proxy-on.html
+Reference Article:
+https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403
 
 Deploy workers:
 https://workers.cloudflare.com/
 
 Example:
 ```javascript
-fetch('https://test.cors.workers.dev/?https://httpbin.org/post', {
+fetch('https://bold-forest-51f4.hanpengchen.workers.dev/?https://httpbin.org/post', {
   method: 'post',
   headers: {
     'x-foo': 'bar',

@@ -6,11 +6,12 @@ https://github.com/Zibri/cloudflare-cors-anywhere
 */
 
 /*
-whitelist = [ "^http.?://www.zibri.org$", "zibri.org$", "test\\..*" ];  // regexp for whitelisted urls
+whitelist = [ "^http.?://www.chenhanpeng.com$", "chenhanpeng.com$" ];  // regexp for whitelisted urls
 */
 
 blacklist = [ ];           // regexp for blacklisted urls
-whitelist = [ ".*" ];     // regexp for whitelisted origins
+// whitelist = [ ".*" ];     // regexp for whitelisted origins
+whitelist = [ "^http.?://www.chenhanpeng.com$", "chenhanpeng.com$" ]
 
 function isListed(uri,listing) {
     var ret=false;
@@ -131,7 +132,6 @@ addEventListener("fetch", async event=>{
                 	"CLOUDFLARE-CORS-ANYWHERE\n\n" + 
                 	"Source:\nhttps://github.com/Zibri/cloudflare-cors-anywhere\n\n" + 
                 	"Usage:\n" + origin_url.origin + "/?uri\n\n" +
-			"Donate:\nhttps://paypal.me/Zibri/5\n\n" +
                 	"Limits: 100,000 requests/day\n" + 
                 	"          1,000 requests/10 minutes\n\n" + 
                 	(orig != null ? "Origin: " + orig + "\n" : "") + 
@@ -148,7 +148,7 @@ addEventListener("fetch", async event=>{
                 "Create your own cors proxy</br>\n" + 
                 "<a href='https://github.com/Zibri/cloudflare-cors-anywhere'>https://github.com/Zibri/cloudflare-cors-anywhere</a></br>\n" +
                 "\nDonate</br>\n" +
-                "<a href='https://paypal.me/Zibri/5'>https://paypal.me/Zibri/5</a>\n",
+                "<a href='https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403'>在cloudflare上创建一个免费的在线代理来解决gitalk授权登录报403问题</a>\n",
                 {
                     status: 403,
                     statusText: 'Forbidden',
