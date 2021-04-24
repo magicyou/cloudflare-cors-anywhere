@@ -7,7 +7,7 @@ Source:
 https://github.com/Zibri/cloudflare-cors-anywhere
 
 Demo:
-https://bold-forest-51f4.hanpengchen.workers.dev
+https://cloudflare-cors-anywhere.hanpengchen.workers.dev
 
 Reference Article:
 https://www.chenhanpeng.com/create-own-cors-anywhere-to-resolve-the-request-with-403
@@ -17,7 +17,7 @@ https://workers.cloudflare.com/
 
 Example:
 ```javascript
-fetch('https://bold-forest-51f4.hanpengchen.workers.dev/?https://httpbin.org/post', {
+fetch('https://cloudflare-cors-anywhere.hanpengchen.workers.dev/?https://httpbin.org/post', {
   method: 'post',
   headers: {
     'x-foo': 'bar',
