@@ -11,7 +11,7 @@ whitelist = [ "^http.?://www.chenhanpeng.com$", "chenhanpeng.com$" ];  // regexp
 
 blacklist = [ ];           // regexp for blacklisted urls
 // whitelist = [ ".*" ];     // regexp for whitelisted origins
-whitelist = [ "^http.?://www.chenhanpeng.com$", "chenhanpeng.com$" ]
+whitelist = [ "^http.?://blog.magicyou.cn$", "blog.magicyou.cn$" ]
 
 function isListed(uri,listing) {
     var ret=false;
